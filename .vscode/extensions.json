@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "PKief.material-icon-theme",
+        "formulahendry.auto-close-tag",
+        "irongeek.vscode-env",
+        "shufo.vscode-blade-formatter",
+        "austenc.laravel-blade-spacer",
+        "amiralizadeh9480.laravel-extra-intellisense",
+        "cjhowe7.laravel-blade",
+        "cweijan.vscode-mysql-client2",
+        "mehedidracula.php-constructor",
+        "xdebug.php-debug",
+        "neilbrayfield.php-docblocker",
+        "mehedidracula.php-namespace-resolver",
+        "bmewburn.vscode-intelephense-client"
+    ]
+}
