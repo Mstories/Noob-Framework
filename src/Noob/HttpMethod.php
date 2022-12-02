@@ -1,4 +1,5 @@
 <?php
+namespace Noob;
 
 enum HttpMethod: string {
   case GET = "GET";
