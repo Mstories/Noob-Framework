@@ -5,20 +5,22 @@ require_once "../vendor/autoload.php";
 use Noob\HttpNotFoundException;
 use Noob\Router;
 
+
 $router = new Router();
 
 $router->get('/test', function () {
-  return "get ok";
+    return "GET OK";
 });
 
 $router->post('/test', function () {
-  return "POST OK";
+    return "POST OK";
 });
 
 try {
-  $action = $router->resolve($_SERVER["REQUEST_URI"], $_SERVER["REQUEST_METHOD"]);
-  print($action());
+    $route = $router->resolve($_SERVER["REQUEST_URI"], $_SERVER["REQUEST_METHOD"]);
+    $action = $route->action();
+    print($action());
 } catch (HttpNotFoundException $e) {
-  print("Not found");
-  http_response_code(404);
+    print("Not found");
+    http_response_code(404);
 }
